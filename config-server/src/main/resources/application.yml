@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ds-kell/config-repo
+          username: ds-kell
+          password:
+          default-label: master
+          clone-on-start: true
